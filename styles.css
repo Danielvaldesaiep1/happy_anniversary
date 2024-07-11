@@ -1,0 +1,76 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4acc3;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  height: 200px;
+  width: 500px;
+  /* border: solid 2px #6c402d; */
+}
+
+.form-container input {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+.form-container button {
+  margin-top: 25px;
+  background-color: #ed3973;
+  width: 220px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: bold;
+  margin-left: 10%;
+}
+
+.container-img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 410px;
+}
+
+.container-img img {
+  width: 200px;
+  transition: transform 0.5s ease-in-out;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img-mono {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 16px;
+}
