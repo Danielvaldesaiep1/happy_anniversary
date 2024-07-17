@@ -95,10 +95,9 @@
           </swiper-slide>
           <swiper-slide>
             <img src="./img-slider/2024.jpg" alt="" />
-          </swiper-slide>
+          </swiper-container>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-        </swiper-container>
       </div>
     </section>
 
@@ -109,18 +108,17 @@
             Feliz Aniversario N8 Polli
             <img src="./icons/enamorado.png" style="width: 40px" alt="" />
           </h1>
-          <h1>Te amo !</h1>
         </div>
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
+      const swiper = new Swiper('.mySwiper', {
+        effect: 'coverflow',
         speed: 1000,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         coverflowEffect: {
           rotate: 50,
@@ -128,6 +126,20 @@
           depth: 100,
           modifier: 1,
           slideShadows: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
         },
       });
     </script>
