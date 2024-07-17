@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //Redireccion
       setTimeout(() => {
         window.location.href =
-          "https://www.youtube.com/watch?v=yIr_1CasXkM&t=853s";
+          "https://danielvaldesaiep1.github.io/happy_anniversary/moments";
       }, 2000);
     } else {
       message.textContent = "Contraseña incorrecta. Inténtalo de nuevo.";
